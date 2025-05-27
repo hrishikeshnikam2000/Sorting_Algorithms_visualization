@@ -1,11 +1,38 @@
 .array-container {
-  position: absolute;
-  left: 100px;
+  /* position: absolute; */
+  /* left: 100px; */
   /* top: 100px; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 .array-bar {
-  width: 2px;
+  width: 0.5%;
   display: inline-block;
-  margin: 0 1px;
+  margin: 0 0.1vw;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .array-container {
+    width: 95%;
+  }
+
+  .array-bar {
+    width: 1%;
+    margin: 0 0.2vw;
+  }
+}
+
+/* Media Query for Mobiles */
+@media (max-width: 480px) {
+  .array-container {
+    width: 98%;
+  }
+
+  .array-bar {
+    width: 1.5%;
+    margin: 0 0.3vw;
+  }
 }
